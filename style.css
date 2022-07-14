@@ -105,7 +105,7 @@ input{
    gap: 40px;
 }
 button{
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     width: 120px;
     padding: 10px 0px;
     border-radius: 30px;
@@ -131,13 +131,15 @@ button:active{
     grid-column-end: 5;
 }
 .cards{
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 20px;
     padding: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
     column-gap: 30px;
-    row-gap: 30px;
+    row-gap: 50px;
 }
 .card{
     padding: 25px;
@@ -151,4 +153,50 @@ a:hover{
 .card-title{
     font-size: 1.1rem;
     font-weight: 550;
+}
+.rightCorner{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: static;
+}
+.rightTop{
+    min-width: 200px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 0.6rem;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+
+}
+.para{
+    border-bottom: 1px solid #000;
+}
+p{
+    color: lightslategray;
+}
+.btm{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.btmBox{
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+
+}
+.chopper{
+    font-size: 0.8rem;
+    
+}
+input:hover{
+    border: solid black;
 }
