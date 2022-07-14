@@ -49,7 +49,7 @@ a{
     flex-direction: column;
 }
 .header{
-    padding-top: 20px;
+    padding-top: 10px;
     padding-right: 30px;
     display: grid;
     grid-template-columns: repeat(10,1fr);
@@ -67,6 +67,7 @@ input{
 .fa-bell-o{
     grid-column-start: 8;
     padding-left: 100px;
+    color: black;
 }
 .photo1{
     height: 60px;
@@ -78,6 +79,9 @@ input{
     justify-self: end;
     padding-right: 15px;
 }
+.fa-search:hover{
+    cursor: pointer;
+}
 .name1{
     font-size: 1rem;
     font-weight: 700;
@@ -88,13 +92,63 @@ input{
     display: flex;
     align-items: center;
     gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .photo2{
     border-radius: 300px;
     height: 150px;
     width: 180px;
 }
-.id1{
-    margin: 0px;
-    /* padding-bottom: 0px; */
+.selectBtn{
+    display: flex;
+  margin-left: 350px;
+   gap: 40px;
+}
+button{
+    font-size: 1.8rem;
+    width: 120px;
+    padding: 10px 0px;
+    border-radius: 30px;
+    color: aliceblue;
+    font-weight: 500;
+    border: none;
+    background-color:#0284c7 ;
+}
+button:hover{
+    cursor: pointer;
+}
+button:active{
+    box-shadow: 1px 1px 1px black;
+}
+
+.content{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.projects{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.cards{
+    margin-top: 20px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+}
+.card{
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    border-left: 5px solid #dc2626;
+}
+a:hover{
+    color: black;
+}
+.card-title{
+    font-size: 1.1rem;
+    font-weight: 550;
 }
